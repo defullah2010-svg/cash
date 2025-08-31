@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تنويه</title>
+<style>
+  body {
+    font-family: "Tahoma", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* تدرج اللون من الأخضر التركوازي إلى الأزرق التركوازي */
+    background: linear-gradient(135deg, #20B2AA, #40E0D0);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+
+  @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  .message-container {
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    line-height: 1.6;
+  }
+
+  .message-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #15445a;
+  }
+
+  .message-container p {
+    font-size: 16px;
+    color: #555;
+    white-space: pre-line; /* يحافظ على الأسطر */
+  }
+
+  .message-container p .greeting {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 15px;
+    color: #2c7a7b;
+  }
+
+  .message-container p strong {
+    font-weight: bold;
+    color: #b36b3f;
+  }
+
+  .message-container img {
+    max-width: 150px;
+    margin: 20px 0;
+  }
+
+  footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  @media (max-width: 650px) {
+    .message-container {
+      padding: 20px;
+    }
+    .message-container h1 {
+      font-size: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="message-container">
+  <h1>💡 تنويه</h1>
+  <p>
+    <span class="greeting">السلام عليكم ورحمة الله وبركاته</span>
+عزيزي المستفيد/ة، بعد التحديث لجميع البرامج،  
+وفي حال دفعكم لرسوم الاستخدام لأحد البرامج أو لجميعها،  
+يمكنك الدخول بحسب الرسوم التي دفعت، وهذا حق لك.
+
+وفي حال رغبتكم في استخدام جميع البرامج،  
+نفيدكم أن رسوم الاستخدام للبرنامج الواحد <strong>10 ريال</strong>،  
+بما مجموعه <strong>30 ريال</strong> لجميع البرامج.
+
+شاكرين حسن تفهمكم، متمنين لكم مزيداً من التوفيق،  
+وأذنت لمن يشهد، والله خير الشاهدين.
+  </p>
+
+  <img src="images/cash.png" alt="cash">
+
+  <footer>تصميم : أ.ضيف الله الطويرقي 0543559220</footer>
+</div>
+
+</body>
+</html>
