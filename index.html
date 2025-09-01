@@ -5,24 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>تنويه</title>
 <style>
+  /* تعريف الخط */
+  @font-face {
+    font-family: "HelveticaNeueW23";
+    src: url("fonts/HelveticaNeueW23-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
   body {
-    font-family: "Tahoma", sans-serif;
+    font-family: "HelveticaNeueW23", Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* تدرج اللون من الأخضر التركوازي إلى الأزرق التركوازي */
-    background: linear-gradient(135deg, #20B2AA, #40E0D0);
+
+    /* خلفية متدرجة أزرق تركوازي غامق مع حركة */
+    background: linear-gradient(135deg, #006d77, #004c54, #008b8b);
     background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    animation: gradientBG 12s ease infinite;
   }
 
   @keyframes gradientBG {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 
   .message-container {
@@ -44,7 +53,7 @@
   .message-container p {
     font-size: 16px;
     color: #555;
-    white-space: pre-line; /* يحافظ على الأسطر */
+    white-space: pre-line;
   }
 
   .message-container p .greeting {
@@ -88,13 +97,15 @@
   <p>
     <span class="greeting">السلام عليكم ورحمة الله وبركاته</span>
 إتفاقية الاشتراك للعام الدراسي الحالي 1447هـ
-عزيزي المستفيد/ة، بعد التحديث لجميع البرامج،  
-وفي حال دفعكم لرسوم الاستخدام لأحد البرامج أو لجميعها،  
-يمكنك الدخول بحسب الرسوم التي دفعت، وهذا حق لك.
+عزيزي المستفيد/ة، 
+بعد التحديث لجميع البرامج،  
+وفي حال دفعكم لرسوم الاستخدام <strong> سابقاً</strong> لأحد البرامج أو لجميعها،   
+يمكنك الدخول بحسب الرسوم التي دفعتها ، وهذا حق لك.
 
-وفي حال رغبتكم في استخدام جميع البرامج،  
-نفيدكم أن رسوم الاستخدام للبرنامج الواحد <strong>10 ريال</strong>،  
+رسوم الاستخدام للبرنامج الواحد <strong>10 ريال</strong>،  
 بما مجموعه <strong>30 ريال</strong> لجميع البرامج.
+
+أي بإمكانك الدفع حسب عدد البرامج التي ستستخدمها
 
 شاكرين حسن تفهمكم، متمنين لكم مزيداً من التوفيق،  
 وأذنت لمن يشهد، والله خير الشاهدين.
